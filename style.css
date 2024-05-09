@@ -18,8 +18,7 @@
 }
 body{
     font-family: var(--fonte-padrao);
-    font-weight: 600;
-    color: var(--cor1);
+    
 }
 h1{
     font-size: 1.5em;
@@ -40,7 +39,7 @@ ul{
     list-style-type: none;
     display: flex;
 }
-a{
+main a{
     font-weight: bold;
     color: var(--cor4);
     padding: 10px;
@@ -62,6 +61,8 @@ a{
 }
 main{
     text-align: center;
+    font-weight: 600;
+    color: var(--cor1);
 }
 article{
     padding: 0px 10px;
@@ -92,4 +93,29 @@ section{
     width: 720px;
     height: 481px;
 }
+footer{
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.678);
+    padding: 48px 40px 32px 131px;
+    color: var(--cor4);
+}
+footer a{
+    
+    font-weight: bold;
+    color: var(--cor4);
+    padding: 10px 10px 10px 5px;
+    
+}
+#midias{
+    padding: 50px 0px 30px 0px;
+}
+#politica{
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+#politica ul li::after{
+    content: " |";
+    margin-right: 10px;
+    
+}
+
 
