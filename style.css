@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: #D4E9E2;
+    --cor1: #1E3932;
+    --cor2: #008248;
+    --cor3: #2fa866;
+    --cor4: #212121;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+body{
+    font-family: var(--fonte-padrao);
+}
+header{
+    
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.445);
+}
+nav{
+    display: inline-flex;
+}
+#logo-nav{
+    width: 50px;
+    height: 50px;
+    
+}
+ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+a{
+    font-weight: bold;
+    color: var(--cor4);
+    padding: 10px;
+}
+#historias-nav{
+    display: inline-flex;
+    justify-content: end;
+}
+#historias-nav img{
+    width: 120px;
+}
+#encontre{
+    display: inline-flex;
+    justify-content: right;
+}
+#encontre img{
+    width: 20px;
+    height: 20px;
+}
+main{
+    text-align: center;
+}
