@@ -18,13 +18,14 @@
 }
 body{
     font-family: var(--fonte-padrao);
+    font-weight: 600;
 }
 header{
     
     box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.445);
 }
 nav{
-    display: inline-flex;
+    display: flex;
 }
 #logo-nav{
     width: 50px;
@@ -33,23 +34,23 @@ nav{
 }
 ul{
     list-style-type: none;
-    display: inline-flex;
+    display: flex;
 }
 a{
     font-weight: bold;
     color: var(--cor4);
     padding: 10px;
 }
-#historias-nav{
-    display: inline-flex;
-    justify-content: end;
+.historias-nav{
+    display: flex;
+    justify-content: flex-end;
 }
-#historias-nav img{
+.historias-nav img{
     width: 120px;
 }
 #encontre{
-    display: inline-flex;
-    justify-content: right;
+    display: flex;
+    justify-content: flex-end;
 }
 #encontre img{
     width: 20px;
@@ -57,4 +58,25 @@ a{
 }
 main{
     text-align: center;
+}
+#section-1{
+    margin: 20px;
+    background-color: var(--cor0);
+    width: 100%;
+    padding: 50px;
+}
+#section-1 p{
+    color: var(--cor1);
+    
+}
+#section-1 button{
+    margin-top: 32px;
+    border-radius: 30px;
+    color: var(--cor1);
+    background-color: var(--cor0);
+    
+}
+#section-1 button p{
+    padding: 10px;
+    font-weight: bolder;
 }
