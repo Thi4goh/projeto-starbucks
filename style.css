@@ -19,6 +19,10 @@
 body{
     font-family: var(--fonte-padrao);
     font-weight: 600;
+    color: var(--cor1);
+}
+h1{
+    font-size: 1.5em;
 }
 header{
     
@@ -59,24 +63,33 @@ a{
 main{
     text-align: center;
 }
-#section-1{
+article{
+    padding: 0px 10px;
+}
+section{
     margin: 20px;
     background-color: var(--cor0);
-    width: 100%;
+    
     padding: 50px;
 }
-#section-1 p{
-    color: var(--cor1);
-    
-}
-#section-1 button{
+
+.saiba-mais{
+    display: inline-block;
     margin-top: 32px;
     border-radius: 30px;
-    color: var(--cor1);
     background-color: var(--cor0);
-    
+    border: 2px solid black;
 }
-#section-1 button p{
-    padding: 10px;
-    font-weight: bolder;
+#section-2 img{
+    width: 720px;
+    height: 420px;
 }
+#section-3 img{
+    width: 720px;
+    height: 480px;
+}
+#section-4 img{
+    width: 720px;
+    height: 481px;
+}
+
