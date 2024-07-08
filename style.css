@@ -1,142 +1,74 @@
 @charset "UTF-8";
 
-:root{
-    --cor0: #D4E9E2;
-    --cor1: #1E3932;
-    --cor2: #008248;
-    --cor3: #2fa866;
-    --cor4: #212121;
-
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+@font-face {
+    font-family:'SoDoSans-Regular' ;
+    src: url('fonts/SoDoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family:'SoDoSans-SemiBold' ;
+    src: url('fonts/SoDoSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'SoDoSans-Bold' ;
+    src: url('fonts/SoDoSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    
 }
+:root{
+    --fonte-principal: 'SoDoSans-Regular', Arial, sans-serif;
+    --fonte-semibold: 'SoDoSans-SemiBold', Arial, sans-serif;
+    --fonte-bold: 'SoDoSans-Bold', Arial, sans-serif;
+}
+
 body{
-    font-family: var(--fonte-padrao);
-    
+    font-family: var(--fonte-bold);
+    font-size: 1.25em;
 }
-h1{
-    font-size: 1.5em;
-}
-header{
+
+#nav-bar{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 28px;
-    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.445);
+    padding: 40px;
+    box-shadow: 0px 1px 3px rgba(150, 150, 150, 0.397);
 }
-nav{
+#nav-logo img{
+    height: 60px;
+    width: 60px;
+}
+#nav-left-list{
+    display: flex;
+    
+}
+#nav-left-list li{
+    margin-left: 30px;
+    list-style: none;
+}
+#nav-left, #nav-right{
+    display: flex;
     align-items: center;
-    display: flex;
 }
-#logo-nav{
-    width: 50px;
-    height: 50px;
-    
-}
-nav a{
-    font-weight: 600;
-    color: var(--cor4);
-    padding-left: 20px;
-}
-nav ul{
-    list-style-type: none;
-    display: flex;
-}
-.historias-nav{
-    display: flex;
-    padding-right: 10px;
-    margin-left: auto;
-}
-.historias-nav img{
+
+#historias{
     width: 120px;
-}
-#encontre a{
-    font-weight: 600;
-    padding-left: 10px;
-    color: var(--cor4);
-}
-#encontre img{
-    width: 20px;
-    height: 20px;
-}
-main{
-    text-align: center;
-    font-weight: 600;
-    color: var(--cor1);
-}
-main a{
-    font-weight: bold;
-    color: var(--cor4);
-    padding: 10px;
-}
-article{
-    padding: 0px 10px;
-}
-section{
-    margin: 20px;
-    background-color: var(--cor0);
-    
-    padding: 50px;
-}
-
-.saiba-mais{
-    display: inline-block;
-    margin-top: 32px;
-    border-radius: 30px;
-    background-color: var(--cor0);
-    border: 2px solid black;
-}
-#section-2 img{
-    width: 720px;
-    height: 420px;
-}
-#section-3 img{
-    width: 720px;
-    height: 480px;
-}
-#section-4 img{
-    width: 720px;
-    height: 481px;
-}
-footer{
-    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.678);
-    padding: 48px 40px 32px 131px;
-    color: var(--cor4);
     
 }
-footer a{
+#nav-right{
     
-    font-weight: bold;
-    color: var(--cor4);
-    padding: 10px 10px 10px 5px;
-    
+    display: flex;
+    justify-content: space-between;
 }
-aside{
-    margin: auto;
-    
+#found-store img{
+    height: 24px;
+    width: 24px;
 }
-footer ul{
-    
-    list-style-type: none;
-}
-
-#midias{
-    padding: 50px 0px 30px 0px;
-}
-#politica{
-    font-weight: bold;
-    padding-bottom: 50px;
-}
-#politica ul li::after{
-    content: " |";
-    margin-right: 10px;
-    
-}
-
-
