@@ -25,21 +25,28 @@
     --fonte-principal: 'SoDoSans-Regular', Arial, sans-serif;
     --fonte-semibold: 'SoDoSans-SemiBold', Arial, sans-serif;
     --fonte-bold: 'SoDoSans-Bold', Arial, sans-serif;
+
+    --cor-fundo: #D4E9E2;
+    --cor1: #212121;
+    --cor2: #1E3932;
+}
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 body, html{
     font-family: var(--fonte-principal);
-    color: #212121;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+    color: var(--cor1);
+    height: 100vh;
 }
+
 .navbar{
     display: flex;
     justify-content: space-between;
     padding: 15px 40px;
-    box-shadow: 0px 1px 3px rgba(150, 150, 150, 0.397);
+    box-shadow: 0px 1px 3px rgba(150, 150, 150, 0.582);
     font-family: var(--fonte-bold);
     font-size: 0.90em;
 
@@ -49,7 +56,6 @@ body, html{
 }
 .nav-left-list{
     display: flex;
-    
 }
 .nav-left-list li{
     margin-left: 30px;
@@ -62,43 +68,52 @@ body, html{
 
 #historias{
     width: 120px;
-    
 }
 .nav-right{
-    display: flex;
     margin: 10px;
- 
 }
-
-.found-store img{
-    padding-left: 20px;
-    width: 20px;
-    height: 20px;
+.found-store{
+    margin-left: 16px;
 }
 main p{
     font-size: 17px;
-    margin: 0 auto;
 }
 .main-container{
-    display: flex;
+    
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    
 }
 .image-section{
     margin-bottom: 25px;
 }
 .info-section{
-    background-color: #D4E9E2;
-    width: 1344px;
+    background-color: var(--cor-fundo);
+    max-width: 1344px;
+    min-width: 550;
+    margin: auto;
     margin-bottom: 25px;
     padding: 32px 48px;
 }
 
-
-.info-align p, .button{
-    
+.info-align p{
+    max-width: 800px;
+    min-width: 320px;
+}
+.info-align p, .saiba-mais{
     margin: auto;
-    text-align: center;   
+}
+.saiba-mais{
+    margin-top: 32px;
+    padding: 7px 16px;
+    border: 1px solid black;
+    width: 81px;
+    border-radius: 50px;
+    font-family: var(--fonte-semibold);
+    font-size: 0.9rem;
+}
+.saiba-mais a{
+    color: var(--cor2);
 }
 
 
