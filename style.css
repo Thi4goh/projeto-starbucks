@@ -20,41 +20,42 @@
     font-weight: 700;
     font-style: normal;
 }
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
+
 :root{
     --fonte-principal: 'SoDoSans-Regular', Arial, sans-serif;
     --fonte-semibold: 'SoDoSans-SemiBold', Arial, sans-serif;
     --fonte-bold: 'SoDoSans-Bold', Arial, sans-serif;
 }
 
-body{
-    font-family: var(--fonte-bold);
-    font-size: 1.25em;
+body, html{
+    font-family: var(--fonte-principal);
+    color: #212121;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
-
-#nav-bar{
+.navbar{
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding: 15px 40px;
     box-shadow: 0px 1px 3px rgba(150, 150, 150, 0.397);
+    font-family: var(--fonte-bold);
+    font-size: 0.90em;
+
 }
-#nav-logo img{
-    height: 60px;
-    width: 60px;
+.nav-logo img{
+    width: 50px;
 }
-#nav-left-list{
+.nav-left-list{
     display: flex;
     
 }
-#nav-left-list li{
+.nav-left-list li{
     margin-left: 30px;
     list-style: none;
 }
-#nav-left, #nav-right{
+.nav-left, .nav-right{
     display: flex;
     align-items: center;
 }
@@ -63,12 +64,44 @@ body{
     width: 120px;
     
 }
-#nav-right{
-    
+.nav-right{
     display: flex;
-    justify-content: space-between;
+    margin: 10px;
+ 
 }
-#found-store img{
-    height: 24px;
-    width: 24px;
+
+.found-store img{
+    padding-left: 20px;
+    width: 20px;
+    height: 20px;
 }
+main p{
+    font-size: 17px;
+    margin: 0 auto;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-section{
+    margin-bottom: 25px;
+}
+.info-section{
+    background-color: #D4E9E2;
+    width: 1344px;
+    margin-bottom: 25px;
+    padding: 32px 48px;
+}
+
+
+.info-align p, .button{
+    
+    margin: auto;
+    text-align: center;   
+}
+
+
+
+
+
