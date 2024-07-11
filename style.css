@@ -3,22 +3,16 @@
 @font-face {
     font-family:'SoDoSans-Regular' ;
     src: url('fonts/SoDoSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
     font-family:'SoDoSans-SemiBold' ;
     src: url('fonts/SoDoSans-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
 }
 
 @font-face {
     font-family:'SoDoSans-Bold' ;
     src: url('fonts/SoDoSans-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
 }
 
 :root{
@@ -31,14 +25,16 @@
     --cor2: #1E3932;
 }
 *{
+    list-style-type: none;
     text-decoration: none;
     margin: 0;
     padding: 0;
+    
 }
 
 body, html{
-    font-family: var(--fonte-principal);
     color: var(--cor1);
+    font-family: var(--fonte-principal);
     height: 100vh;
 }
 
@@ -49,7 +45,6 @@ body, html{
     box-shadow: 0px 1px 3px rgba(150, 150, 150, 0.582);
     font-family: var(--fonte-bold);
     font-size: 0.90em;
-
 }
 .nav-logo img{
     width: 50px;
@@ -75,17 +70,21 @@ body, html{
 .found-store{
     margin-left: 16px;
 }
-main p{
-    font-size: 17px;
-}
 .main-container{
     max-width: 1440px;
-    margin: 0 auto;
-}
-img{
-    display: block;
-    max-width: 100%;
+    min-width: 550px;
     margin: auto;
+    flex-direction: column;
+}
+main h1, p{
+    color: var(--cor2);
+}
+main h1{
+    font-weight: 500;
+}
+main p{
+    font-size: 18px;
+    line-height: 2rem;
 }
 .image-section{
     margin-bottom: 32px;
@@ -96,15 +95,15 @@ img{
     padding: 32px 48px;
 }
 
-.info-align p{
+.text-align p{
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     min-width: 320px;
 }
-.info-align p, .saiba-mais{
+.text-align p, .btn{
     margin: auto;
 }
-.saiba-mais{
+.btn{
     margin-top: 32px;
     padding: 7px 16px;
     border: 1px solid black;
@@ -113,28 +112,95 @@ img{
     font-family: var(--fonte-semibold);
     font-size: 0.9rem;
 }
-.saiba-mais a{
+.btn a{
     color: var(--cor2);
 }
-.product-section{
-    margin-bottom: 32px;
+.product-section{ 
     display: flex;
+    margin-bottom: 32px;
     justify-content: space-between;
 }
-.product-align{
-    flex-grow: 1;
+.text-product-container, .text-container{
     background-color: var(--cor-fundo);
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 32px 48px;
+    height: 420px;
+}
+.text-container{
+    height: 480px;
+    text-align: center; 
+}
+.text-container p{
+    width: 500px;
 }
 .text-product h1{
     margin-bottom: 24px;
 }
+.width-720 img{width: 720px;}
 
-
-
+footer{
+    padding: 48px 40px 32px 131px;
+    box-shadow: 0px -2px 3px rgba(109, 109, 109, 0.281);
+}
+footer h3{
+    font-size: 1.1rem;
+    font-weight: 100;
+    margin-bottom: 24px;
+}
+.footer-info{
+    display: flex;
+}
+.footer-col{
+    width: 100%;
+    margin-left: 32px;
+    max-width: 180px;
+    min-height: 406px;
+}
+.footer-col li{
+    font-size: 0.9rem;
+    padding: 8px 0px;
+    margin-bottom: 8px;
+    color: rgba(0, 0, 0, .56);
+}
+footer hr{
+    border:none;
+    padding: 32px 0px;
+}
+footer hr::before{
+    content: "";
+    display: block;
+    border-top: 2px solid rgba(0, 0, 0, .1);
+}
+.social-medias img{
+    margin-left: 4px;
+}
+.social-medias ul{
+    display: flex;
+    margin: 14px 0px;
+}
+.social-medias li{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 44px;
+    min-height: 44px;
+}
+.policy ul{
+    margin: 14px 0px;
+    display: flex;
+}
+.policy li{
+    padding: 0px 16px;
+    border-left: 1px solid rgba(0, 0, 0, .56);
+}
+.copyright p, .copyright a{
+    color: rgba(0, 0, 0, .56);
+    font-size: 14px;
+    padding: 16px 0px;
+    margin: 14px 0px;
+}
 
 
 
